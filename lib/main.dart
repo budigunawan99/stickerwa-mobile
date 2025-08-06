@@ -1,5 +1,5 @@
-import 'package:StickerWA/screen/home/home_screen.dart';
-import 'package:StickerWA/static/navigation_route.dart';
+import 'package:StickerWA/static/router.dart';
+import 'package:StickerWA/style/theme/stickerwa_theme.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,14 +11,11 @@ class MyApp extends StatelessWidget {
   
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
       debugShowCheckedModeBanner: false,
       title: 'StickerWA',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-      ),
-      initialRoute: NavigationRoute.homeRoute.name,
-      routes: {NavigationRoute.homeRoute.name: (context) => const HomeScreen()},
+      theme: StickerwaTheme.darkTheme,
+      routerConfig: MyRouter.routeConfig,
     );
   }
 }
