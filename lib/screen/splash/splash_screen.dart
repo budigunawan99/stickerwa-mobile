@@ -29,13 +29,13 @@ class _SplashScreenState extends State<SplashScreen>
 
     final isLogin = context.read<AuthProvider>().isLogin;
 
-    // Future.delayed(const Duration(seconds: 3), () {
-    //   if (isLogin) {
-    //     context.go("/home");
-    //   } else {
-    //     context.go("/login");
-    //   }
-    // });
+    Future.delayed(const Duration(seconds: 3), () {
+      if (isLogin) {
+        context.go("/home");
+      } else {
+        context.go("/login");
+      }
+    });
   }
 
   @override
@@ -63,7 +63,7 @@ class _SplashScreenState extends State<SplashScreen>
                 ),
               ),
             ),
-        
+
             Column(
               children: [
                 Text(
