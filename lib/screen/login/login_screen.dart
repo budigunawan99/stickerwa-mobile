@@ -32,8 +32,8 @@ class _LoginScreenState extends State<LoginScreen> {
           Flexible(
             child: Image.asset(
               "assets/images/logo_header_green.png",
-              width: 170,
-              height: 60,
+              width: 250,
+              height: 140,
             ),
           ),
           Flexible(
@@ -44,14 +44,14 @@ class _LoginScreenState extends State<LoginScreen> {
                 overflow: TextOverflow.ellipsis,
                 textAlign: TextAlign.center,
                 maxLines: 2,
-                style: Theme.of(context).textTheme.labelSmall?.copyWith(
+                style: Theme.of(context).textTheme.labelMedium?.copyWith(
                   color: Theme.of(context).colorScheme.onPrimary,
                 ),
               ),
             ),
           ),
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 40),
             child: ElevatedButton(
               onPressed: () {},
               style: TextButton.styleFrom(
@@ -77,7 +77,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   Flexible(
                     child: Text(
                       'Sign In with Google',
-                      style: Theme.of(context).textTheme.titleSmall,
+                      style: Theme.of(context).textTheme.titleMedium,
                     ),
                   ),
                 ],
