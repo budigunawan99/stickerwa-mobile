@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "61421528219",
+    "project_id": "stickerwa-6f3d9",
+    "storage_bucket": "stickerwa-6f3d9.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:61421528219:android:f166db16b0834e2c72523e",
+        "android_client_info": {
+          "package_name": "com.example.stickerwa"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBrJjJVxt4LqiXBjn3wllnQ_uYLaIkzss"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
